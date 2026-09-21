@@ -1,0 +1,2 @@
+# Purpose: Synthetic message used by the offline demo.
+Start a focused 14-day trial. Cancel before day 14 and pay nothing.
