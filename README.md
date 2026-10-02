@@ -34,6 +34,10 @@ Each respondent is one explicit trait dictionary. Its request asks `would_engage
 
 This is directional triage over a simplified declared model, explicitly not user research, survey data, causal inference, or a claim about a real population. A winning message was tested only against your axes. Jev can be affected by injected text and literal wording. Calibrate decisions with real users.
 
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
+
 ## Validation
 
 `npm run check`, `npm run typecheck`, `npm test`, and `npm run demo` run in CI on Node 22 and 24. Live smoke is opt-in and capped at two paid calls.
