@@ -47,3 +47,11 @@ Run `npm run demo:report` to capture this repository’s bundled example as one 
 [Autonomy Meter](https://github.com/gbesse/autonomy-meter) · [Question Forge](https://github.com/gbesse/question-forge) · [jev-codebook](https://github.com/gbesse/jev-codebook)
 
 Independent project; not affiliated with TypeSafe AI. [TypeSafe API](https://docs.typesafe.ai/api) · [known model limitations](https://docs.typesafe.ai/model-jaggedness/jev-1.13)
+
+## Bounded grid sampling / Échantillonnage borné / Muestreo limitado
+
+EN: `chooseRespondents` samples mixed-radix combination indices without constructing the entire Cartesian product. Budget is honored even below `maxFull`; `coverage` lists observed/missing levels. Direct `factorial` expansion is limited to 100,000 rows. Unsampled main effects and Wilson intervals are `null`; HTML reports show a dash and accept `{lang: 'fr'|'en'|'es'}`. Report writes create new private files only. Sampling is a reproducible heuristic over declared synthetic traits, not a representative human population, observed conversion rate or validated confidence interval for real customers.
+
+FR : `chooseRespondents` échantillonne des indices à base mixte sans construire tout le produit cartésien. Le budget s’applique même sous `maxFull` ; `coverage` liste les niveaux examinés/absents. L’expansion directe `factorial` est limitée à 100 000 lignes. Effets et intervalles Wilson sans observations valent `null` ; le HTML affiche un tiret et accepte `{lang: 'fr'|'en'|'es'}`. Les rapports créent seulement de nouveaux fichiers privés. C’est une heuristique reproductible sur traits synthétiques déclarés, pas une population humaine représentative, un taux de conversion observé ou un intervalle validé sur clients réels.
+
+ES: `chooseRespondents` muestrea índices de base mixta sin construir todo el producto cartesiano. Respeta presupuesto incluso bajo `maxFull`; `coverage` lista niveles observados/ausentes. Expansión directa `factorial` limitada a 100 000 filas. Efectos e intervalos Wilson sin observaciones son `null`; HTML muestra guion y acepta `{lang: 'fr'|'en'|'es'}`. Informes solo crean archivos privados nuevos. Es heurística reproducible de rasgos sintéticos declarados, no población humana representativa, conversión observada ni intervalos validados de clientes reales.
