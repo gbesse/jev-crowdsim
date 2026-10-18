@@ -1,6 +1,6 @@
 {
   "name": "@gbesse/jev-crowdsim",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Run a declared factorial audience grid through typed Jev reactions and expose disagreement instead of hiding it.",
   "type": "module",
   "exports": {
