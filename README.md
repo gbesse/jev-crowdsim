@@ -62,3 +62,11 @@ FR : Une erreur ou annulation empêche de démarrer d’autres répondants ; auc
 EN: A failure or cancellation stops dispatching further respondents; no partial report is presented as complete. `simulate({..., signal})` forwards cancellation to the provider and rejects late answers. A provider ignoring the signal may continue already-started work. Traits, questions and answers are detached to avoid callback mutations. `compare` preserves its paired grid and validates both messages before calls. Budget is per message: a comparison can make twice that number of requests. Nonempty text messages, at most 50,000 characters. Prototype-like user keys remain data in exported effects.
 
 ES: Un fallo o cancelación impide iniciar más participantes; no se presenta un informe parcial como completo. `simulate({..., signal})` transmite la cancelación al proveedor y rechaza respuestas tardías. Un proveedor que ignore la señal puede continuar trabajo ya iniciado. Rasgos, preguntas y respuestas se separan para evitar mutaciones por callbacks. `compare` conserva su cuadrícula emparejada y valida ambos mensajes antes de llamar. Presupuesto por mensaje: una comparación puede realizar el doble de solicitudes. Mensajes de texto no vacíos, máximo 50.000 caracteres. Las claves de usuario de tipo prototipo siguen siendo datos en los efectos exportados.
+
+## Comparaison appariée / Paired comparison / Comparación emparejada
+
+FR — `compare()` expose `pairedEffects` : différences B moins A sur les mêmes répondants synthétiques, globalement et par niveau, nombres de hausses/baisses/égalités. Un niveau absent reste inconnu. Ce sont des scores de modèle, sans estimation de gain de conversion humain ni intervalle de confiance de population.
+
+EN — `compare()` exposes `pairedEffects`: B minus A on identical synthetic respondents, overall and per level, with increase/decrease/tie counts. Missing levels remain unknown. These are model scores, without estimated human conversion lift or population confidence intervals.
+
+ES — `compare()` expone `pairedEffects`: B menos A en los mismos participantes sintéticos, globalmente y por nivel, con recuentos de subidas/bajadas/empates. Niveles ausentes siguen desconocidos. Son puntuaciones de modelo, sin estimación de conversión humana ni intervalos de población.
